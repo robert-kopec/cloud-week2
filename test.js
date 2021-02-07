@@ -32,7 +32,7 @@ app.listen(port, () => {
 setInterval(function () {
     console.log("sending alive");
     sock.send(["status", myhostname + "=alive"]);
-}, 500);
+}, 2000);
 
 //read the nodes.txt file
 const fs = require('fs');
